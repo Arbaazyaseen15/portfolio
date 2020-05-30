@@ -1,0 +1,136 @@
+*{
+  padding: 0;
+  /* margin: 20px; */
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+.navbar{
+  padding: 8px 0;
+}
+.btn{
+  margin-left: 20px;
+}
+.logo{
+  font-family: 'Sacramento', cursive;
+  padding: 10px 5px;
+  font-weight: 300;
+  font-size: 2rem;
+
+}
+.main-container{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 8rem 3rem;
+  flex-wrap: wrap;
+  text-align: center;
+  transition: all .5s ease;
+
+
+}
+.text-box{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.image-box img{
+  width:180px;
+  border-radius: 50px;
+  margin-bottom: 80px;
+  height: 244px;
+  box-shadow: 0 0 10px #ddd;
+}
+.text-box p{
+  margin-top: 20px;
+
+}
+.text-box p a:hover{
+  opacity:.8;
+  transform:scale(0.97);
+  text-decoration: none;
+
+  color: black;
+  transition: all .3s ease;
+
+}
+.img{
+  width: 20px;
+  margin: 40px;
+
+}
+footer{
+  height: 150px;
+}
+
+/* Type Writer effect */
+
+.line {
+      position: relative;
+      top: 50%;
+      width: 16em;
+      margin: 0 auto;
+      border-right: 2px solid rgba(255, 255, 255, 0.75);
+      font-size: 1.3rem;
+      font-weight: 300;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;transform: translateY(-50%);
+
+}
+
+/*Animation*/
+
+.anim-typewriter {
+      animation-duration: 4s;
+      animation: typewriter 3s steps(40) 1s 1 normal both,
+      blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+@keyframes typewriter {
+      from {
+            width: 0;
+      }
+      to {
+            width: 14em;
+      }
+}
+
+@keyframes blinkTextCursor {
+      from {
+            border-right-color: black;
+      }
+      to {
+            border-right-color: transparent;
+      }
+}
+
+/* Media Query for Mobile */
+@media (max-width:600px) {
+  .btn{
+margin-bottom: 10px;
+display: flex;
+justify-content: center;
+border: none;
+  }
+
+
+}
+
+
+        /* About Page CSS */
+.big{
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+hr{
+  width: 200px;
+  border: 1px solid green;
+  display: inline-block;
+}
